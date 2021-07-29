@@ -1,0 +1,28 @@
+
+p{
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    font-size: large;
+}
+
+footer{
+    font-size: small;
+}
+
+h1{
+    color: royalblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: seagreen;
+}
+
+div{
+    color: red;
+    font-weight: bold;
+}
