@@ -15,12 +15,14 @@ function displayData() {
     var tableContent="";
     var startTable ="<table border=1><tr><th>Client</th><th>Project</th><th>Budget</th></tr>";
 
+    var total = 0;
     prjArr.forEach(prjJson=>{
         tableContent =tableContent+"<tr><td>"+prjJson.cl+"</td><td>"+prjJson.pr+"</td><td>"+prjJson.bd+"</td></tr>";
+        total += +prjJson.bd;
     })
 
     var endTable="</table>";
-    tableContent = startTable+tableContent+endTable;
+    tableContent = startTable+tableContent+endTable+total;
     document.getElementById("main").innerHTML=tableContent;
 }
 
