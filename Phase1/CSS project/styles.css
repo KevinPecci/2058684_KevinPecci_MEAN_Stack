@@ -1,20 +1,22 @@
 
 p{
-    color: purple;
     font-family: 'Times New Roman', Times, serif;
 }
 
 header{
-    font-size: large;
+    background-color: darkblue;
+    text-align: center;
 }
 
 footer{
     font-size: small;
+    background-color: darkblue;
+    color: white;
 }
 
 h1{
-    color: royalblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -22,7 +24,13 @@ h2{
     color: seagreen;
 }
 
+body{
+    margin: auto;
+    background-color: grey;
+}
+
 div{
-    color: red;
-    font-weight: bold;
+    background-color: lightblue;
+    max-width: 60%;
+    margin: auto;
 }
