@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="simpleBlog.js"></script>
+</head>
+
+<body class="bg-secondary">
+    <div class="bg-primary">
+        <h1>Simply Blogging</h1>
+        <ul class="nav navbar-dark bg-dark">
+            <li class="nav-item">
+            <a class="nav-link active" href="#">Add Blog </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+            </li>
+        </ul>  
+    </div>  
+    <form class="offset-4 col-4 bg-white border border-dark pb-1 pl-0 pr-0 mt-3 mb-5">
+        <div class="bg-primary ml-0 mr-0">
+            <h2 class="text-center pt-2 pb-2">Make a New Post</h2>
+        </div>
+        <div class="form-group pl-1 pr-1">
+        <label for="title">Post title:</label>
+        <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group pl-1 pr-1">
+        <label for="content">Post content:</label>
+        <input type="text" class="form-control" id="content">
+        </div>
+        <div class="form-group pl-1 pr-1">
+            <label for="link">Direct link to image URL:</label>
+            <input type="text" class="form-control" id="link">
+        </div>
+        <button type="button" class="btn btn-primary offset-3 col-3 mt-0" onclick="makePost()">Make Post</button>
+        <button type="button" class="btn btn-danger col-3 mt-0" onclick="localStorage.clear()">Clear all Posts</button>
+    </form>
+
+
+    <div id="main">
+
+    </div>
+</body>
