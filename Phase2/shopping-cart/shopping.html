@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="shopping.js"></script>
+</head>
+<body>
+    <h1 class="text-center">Shopping cart</h1>
+    <p>Cart Size:
+        <div id="size">
+            0
+        </div>
+    </p>
+    <button type="button" class="btn btn-primary" onclick="document.location='cart.html'">Check-out</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-4">
+                <img class="card-img-top" src="https://i5.walmartimages.com/asr/bdb0d3d6-8660-430d-9df6-4a40687b0311_1.b0588fe7fe42b8c13f8d36feea073e84.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Gengar</h4>
+                  <p class="card-text">
+                    Price: $80
+                  </p>
+                  <button type="button" class="btn btn-primary" onclick="addToCart('Gengar', 80)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/418Rv9TDcDL._AC_.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Eevee</h4>
+                  <p class="card-text">
+                    Price: $100
+                  </p>
+                  <button type="button" class="btn btn-primary" onclick="addToCart('Eevee', 100)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/51WK4cgDIuL._AC_.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Zorua</h4>
+                  <p class="card-text">
+                    Price: $140
+                  </p>
+                  <button type="button" class="btn btn-primary" onclick="addToCart('Zorua', 140)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="card-img-top" src="https://www.pokemoncenter.com/products/images/P4832/701-03837/P4832_701-03837_01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Weedle</h4>
+                  <p class="card-text">
+                    Price: $50
+                  </p>
+                  <button type="button" class="btn btn-primary" onclick="addToCart('Weedle', 50)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
