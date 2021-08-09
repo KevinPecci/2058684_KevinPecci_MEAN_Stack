@@ -1,2 +1,0 @@
-Copy most from budget planner
-Make table with template string ``
