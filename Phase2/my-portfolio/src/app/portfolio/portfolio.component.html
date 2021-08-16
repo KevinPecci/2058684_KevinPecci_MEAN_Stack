@@ -1,0 +1,45 @@
+<div>
+    <form *ngIf=login [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <h2>Log in</h2>
+        <label>UserName: </label>
+        <input type="text" formControlName="user"/><br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass"/><br/>
+        <input type="submit" value="submit" [disabled]="!loginRef.valid"/><br><br><br>
+        <input type="button" value="Sign Up" (click)="signUpFlag()"/>
+        {{msg}}
+    </form>
+    <form *ngIf=signup [formGroup]="signupRef" (ngSubmit)="addUser()">
+        <h2>Sign Up</h2>
+        <label>First Name: </label>
+        <input type="text" formControlName="first"/><br/>
+        <label>Last Name: </label>
+        <input type="text" formControlName="last"/><br/>
+        <label>UserName: </label>
+        <input type="text" formControlName="user"/><br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass"/><br/>
+        <input type="submit" value="submit" [disabled]="!signupRef.valid"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <form *ngIf=portfolio [formGroup]="portfolioRef" (ngSubmit)="addContact()">
+        <h2>My Portfolio</h2>
+        Welcome {{user}}<br>
+        <label>Contact Name: </label>
+        <input type="text" formControlName="cName"/><br/>
+        <label>Phone Number: </label>
+        <input type="text" formControlName="phoneNo"/><br/>
+        <input type="submit" value="Add" [disabled]="!portfolioRef.valid"/>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>Contact Name</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr *ngFor="let con of contacts">
+                <td>{{con.cName}}</td> 
+                <td>{{con.phoneNo}}</td>
+            </tr>
+        </table>
+    </form>
+</div>
