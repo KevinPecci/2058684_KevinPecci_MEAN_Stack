@@ -1,0 +1,14 @@
+{
+  "name": "debugger",
+  "version": "1.0.0",
+  "description": "Project to test debuging",
+  "main": "debugging.js",
+  "scripts": {
+    "test": "debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
